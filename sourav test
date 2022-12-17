@@ -1,0 +1,19 @@
+bud=int(input("Enter the budget"))
+
+cost=[26,20.5,34,10.5,18]
+paper=["TOI","Hindu","ET","BM","HT"]
+
+
+i=0
+
+
+l=[]
+for i in range(4):
+    j=i+1
+    while j<5:
+        if cost[i]+cost[j]<=bud:
+            a=[paper[i],paper[j]]
+            l.append(a)
+        j+=1
+            
+print(l)
